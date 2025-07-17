@@ -1,3 +1,6 @@
+const fs = require('fs');
+const linkedIn = require('linkedin-jobs-api');
+
 const queryOptions = {
     keyword: 'software engineer',
     location: 'India',
@@ -17,7 +20,7 @@ const queryOptions = {
     const jsonData = JSON.stringify(response, null, 2);
     
     // Save to file
-    fs.writeFileSync('linkedin_jobs.json', jsonData, 'utf8');
+    fs.writeFileSync('new.json', jsonData, 'utf8');
     
     console.log('Response saved to linkedin_jobs.json');
     console.log(`Found ${response.length} jobs`);
