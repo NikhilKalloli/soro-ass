@@ -1,0 +1,215 @@
+[
+  {
+    "position": "Software Engineer, ML Systems",
+    "company": "eBay",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-18",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/software-engineer-ml-systems-at-ebay-4267435259?position=3&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=11f3G%2FydYaC5zNenb9DYWQ%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/C560BAQFfGj-Xuawo6A/company-logo_100_100/company-logo_100_100/0/1634568184469/ebay_logo?e=2147483647&v=beta&t=BEp-EQMNBexZVYGMcq6jeof_bX8QzuCCq4BEG6UCRdM",
+    "agoTime": "1 day ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "At eBay, we're more than a global ecommerce leader — we’re changing the way the world shops and sells. Our platform empowers millions of buyers and sellers in more than 190 markets around the world. We’re committed to pushing boundaries and leaving our mark as we reinvent the future of ecommerce for enthusiasts.Our customers are our compass, authenticity thrives, bold ideas are welcome, and everyone can bring their unique selves to work — every day. We're in this together, sustaining the future of our customers, our company, and our planet.Join a team of passionate thinkers, innovators, and dreamers — and help us connect people and build communities to create economic opportunity for all.Looking for a company that inspires passion, courage and creativity, where you can be on the team shaping the future of global commerce? Want to shape how millions of people buy, sell, connect, and share around the world? If you’re interested in joining a purpose driven community that is dedicated to crafting an ambitious and inclusive work environment, join eBay – a company you can be proud to be with.Our Recommendations team works on delivering recommendations at scale and in near real time to our buyers on our website and native app platforms. Recommendations are a core part of how our buyers navigate eBay’s vast and varied inventory. Our team develops state-of-the-art recommendations systems, including deep learning based retrieval systems for personalized recommendations, machine learned ranking models, GenAI/LLM powered recommendations, as well as advanced MLOps in a high volume traffic industrial e-commerce setting.We are building cutting edge recommender systems powered by the latest ML, NLP, LLM/GenAI/RAG and AI technologies. Additionally, we are building production integrations with Google GCP Vertex AI platforms to supercharge our item recommendation algorithms. Come join our innovative engineering and applied research team!This Is An Opportunity ToInfluence how people will interact with eBay’s recommender systems in the future, and how recommender systems technology will evolveWork with unique and large data sets of unstructured multimodal data representing eBay's vast and varied inventory, including billions of items and millions of usersDevelop and deploy state-of-the-art AI models to production which have direct measurable impact on eBay buyersDeploy big data technology and large scale data pipelinesDrive marketplace GMB as well as advertising revenue via organic and sponsored recommendationsQualificationsMS in Computer Science or related area with 3 years of relevant work experience (or BS/BA with 5 years) in Engineering / Machine Learning / AIExperience building large scale distributed applications and expertise in any OO language (Scala, Java, etc.) Experience building with no sql databases and key value stores (MongoDB, Redis, etc)Generalist with a can do attitude and willingness to learn/pick up new skill sets as neededExperience with big data pipelines (Hadoop, Spark) is a plus Experience in AI applied research and industrial recommendation systems is a plusExperience with Large Language Models (LLMs) and prompt engineering is a plusLinks To Some Of Our Previous WorkTech Blog 2025 (Multimodal GenAI)Tech Blog 2025 (GenAI Agentic Platform)RecSys 2024 Workshop paperGoogle Cloud Blog 2024eBay Tech Blog 2023eBay Tech Blog 2022RecSys 2021 paperPlease see the Talent Privacy Notice for information regarding how eBay handles your personal data collected when you use the eBay Careers website or apply for a job with eBay.eBay is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, national origin, sex, sexual orientation, gender identity, veteran status, and disability, or other legally protected status. If you have a need that requires accommodation, please contact us at talent@ebay.com. We will make every effort to respond to your request for accommodation as soon as possible. View our accessibility statement to learn more about eBay's commitment to ensuring digital accessibility for people with disabilities.The eBay Jobs website uses cookies to enhance your experience. By continuing to browse the site, you agree to our use of cookies. Visit our Privacy Center for more information.",
+    "from_description": {
+      "experience_level": "3 years (or 5 years with BS/BA)",
+      "required_skills": [
+        "Machine Learning",
+        "AI",
+        "OO language (e.g. Scala, Java)",
+        "NoSQL databases (e.g. MongoDB, Redis)"
+      ],
+      "education": "MS in Computer Science or related area (or BS/BA)",
+      "job_type": "Not specified",
+      "location": "Not specified",
+      "salary": "Not specified",
+      "remote_status": "Not specified",
+      "technologies": [
+        "ML",
+        "AI",
+        "Large Language Models (LLMs)",
+        "Google GCP Vertex AI",
+        "Hadoop",
+        "Spark",
+        "MongoDB",
+        "Redis"
+      ],
+      "job_responsibilities": "Influence how people interact with eBay's recommender systems, develop and deploy state-of-the-art AI models, drive marketplace revenue via organic and sponsored recommendations"
+    }
+  },
+  {
+    "position": "Junior Data Scientist",
+    "company": "Cardinal Health",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-17",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/junior-data-scientist-at-cardinal-health-4268216056?position=4&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=3cOr3jPCsds%2BEg2F32%2Fe0A%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/D4E0BAQHseggiBegb7A/company-logo_100_100/company-logo_100_100/0/1719772831840/cardinal_health_logo?e=2147483647&v=beta&t=tBty3VPZQtB9YLng5ahCYYoofIX2Y3ApRnlDZwAMn0s",
+    "agoTime": "2 days ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "About Us:Headquartered in Dublin, Ohio, Cardinal Health, Inc. (NYSE: CAH) is a distributor of pharmaceuticals, a global manufacturer and distributor of medical and laboratory products, and a provider of performance and data solutions for healthcare facilities.We are a crucial link between the clinical and operational sides of healthcare, delivering end-to-end solutions and data-driving insights that advance healthcare and improve lives every day. With deep partnerships, diverse perspectives and innovative digital solutions, we build connections across the continuum of care.With more than 50 years of experience, we seize the opportunity to address healthcare's most complicated challenges — now, and in the future.With approximately 48,000 employees across several countries and Fiscal 2023 revenues of $205 billion, Cardinal Health ranks among the top 15 on the Fortune 500.In Bangalore we have created an Innovation and Global Capability Centre (GCC) in 2021 as part of our Global Business Services (GBS) operating model that allows us to in-house talent and scale that talent across our business in areas such as Enterprise IT, Commercial Technologies and Business Process Solutions. Our ambition is to build differentiated opportunities that allows our organization to advance rapidly to be healthcare’s most trusted partner.What Data Science contributes to Cardinal Health The Data & Analytics Function oversees the analytics lifecycle in order to identify, analyze and present relevant insights that drive business decisions and anticipate opportunities to achieve a competitive advantage. This function manages analytic data platforms, the access, design and implementation of reporting/business intelligence solutions, and the application of advanced quantitative modeling. Data Science applies base, scientific methodologies from various disciplines, techniques and tools that extract knowledge and insight from data to solve complex business problems on large data sets, integrating multiple systems. Qualifications2-4 years of experience, preferredBachelor's degree in related field, or equivalent work experience, preferredTechnical support and enhancements for GenAI pipelines with RAGAssist with prompt engineering to improve performanceMonitor system performance, logs, retrieval quality and prompt-effectivenessProvide on-call support during incidentsWhat is expected of you and others at this levelApplies working knowledge in the application of concepts, principles and technical capabilities to perform varied tasksWorks on projects of moderate scope and complexityIdentifies possible solutions to a variety of technical problems and takes action to resolve.Apply judgment within defined parametersReceives general guidance and may receive more detailed instruction on new projectsWork reviewed for sound reasoning and accuracy",
+    "from_description": {
+      "experience_level": "2-4 years",
+      "required_skills": [
+        "GenAI pipelines with RAG",
+        "prompt engineering"
+      ],
+      "education": "Bachelor's degree in related field, or equivalent work experience",
+      "job_type": "Not specified",
+      "location": "Bangalore",
+      "salary": "Not specified",
+      "remote_status": "Not specified",
+      "technologies": [
+        "GenAI pipelines with RAG"
+      ],
+      "job_responsibilities": "Technical support and enhancements for GenAI pipelines, assist with prompt engineering, monitor system performance, provide on-call support during incidents"
+    }
+  },
+  {
+    "position": "Data Scientist Executive, Investment Analytics",
+    "company": "Jellyfish",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-18",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/data-scientist-executive-investment-analytics-at-jellyfish-4269521298?position=5&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=9GOuxofhBVPc8%2BaH5ySMrA%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/D4E0BAQGV_2XAUHghUQ/company-logo_100_100/B4EZXSxSv5GYAQ-/0/1742997892462/jellyfishglobal_logo?e=2147483647&v=beta&t=HMuU1aBKugfwJQMUFWyU3A_I-UB51IC-Y_RD5rndTCA",
+    "agoTime": "1 day ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "At Jellyfish, we believe in the power of diverse perspectives and inclusive collaboration. We welcome individuals who excel in collaborative, varied teams and value the unique contributions that each person brings to the table. Jellyfish is a global digital marketing agency; a unique fusion of tech enthusiasts, creative minds, and media and data experts all united to empower our clients along their digital journey. Our commitment to embracing diverse perspectives fuels our innovation and strategies that challenge the status quo, reinvent media activation, and craft influential stories for our global clients and their customers. Join us in shaping a future where business growth and personal fulfilment go hand in hand.Job DescriptionReporting to our Director of Data Science, Investment Analytics, you will create an impact within our Investment Analytics practice and help with the Paid Media data applications that Jellyfish uses to lead expertise, improve, and transform solutions and services for our clients.You'll help lead complex data science solutions, guiding multi-capability presentations, and taking ownership of advanced measurement and testing for our clients. Join us in our mission to deliver data-inspired excellence!Your primary responsibilities will include:Analyze data to discover hidden trends; deliver insights with clear applicable recommendations.You will be working on EST hours (6:30 PM to 3:30 AM IST)Dedicate time to explaining and promoting the use of data science methodologies such as Media Mix Models, Geo-based Incrementally. Experiments, Causal Impact Studies, and other statistically sound testing approaches. Ensure these methodologies enhance campaign performance for existing clients, providing tangible improvements and insights.Develop, and implement Marketing Mix Models to improve media performance, customer experiences, revenue generation, and other outcomes.Work with platform partners to grow the suite of mathematical techniques for Incrementally Testing, Media Mix Modeling and Data Clean Rooms using both open-source and in-house code to create an excellent offering for clients.Document analytics projects in a manner that ensures specific processes can be replicated and scaled across an organisation.QualificationsFluency in English.Programming proficiency in Python and SQL.1 + years of experience in a data role.analyzing media and web data, such as Amazon Marketing Cloud, Google ADH, Campaign Manager, Meta, and Google Analytics .Proficiency in visualizing data using Tableau, Looker, Matplotlib, or equivalents.Strong Experience with the marketing ecosystem and measurement framework, including paid display, search, social, video, organic, web, and app.Skilled in media measurement methodologies such as media mix modeling, incrementality analysis, and attribution modeling.You seek and implement solutions to improve and automate processes.An understanding of machine learning concepts with hands-on experience.A collaborative mindset—you value diverse perspectives, work well in teams, and are motivated by shared goals.Problem-solving skills—when faced with challenges, you work with others to explore options and identify practical solutions. Note: We emphasise skills, expertise and behavioural attributes over years of experience and traditional degrees. If you want to join our collaborative team, we invite you to apply today with your resume in English.Additional Information Join Jellyfish and experience a workplace where we prioritise your growth, celebrate your contributions, and empower you to tailor your work environment to suit your needs.  💰 Reward: You'll be eligible to join our discretionary annual bonus scheme.💫 Custom Work Environment: Work remotely in a night shift model.📈 Growth, Your Way: Accumulate one paid day each month (2 hours per week) for self-development and access to Jellyfish Learn. Unfortunately, there has been an increase in fake recruiters impersonating Jellyfish and unlawfully using our brand name. If you are unsure if an email with a job offer you have received is genuinely from Jellyfish, or if you suspect any fraudulent activity, please report it to talentacquisition@jellyfish.com.",
+    "from_description": {
+      "experience_level": "1 + years",
+      "required_skills": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "Looker",
+        "Matplotlib",
+        "Machine Learning"
+      ],
+      "education": "Not specified",
+      "job_type": "Full-time",
+      "location": "Not specified",
+      "salary": "Not specified",
+      "remote_status": "Remote",
+      "technologies": [
+        "Python",
+        "SQL",
+        "Tableau",
+        "Looker",
+        "Matplotlib",
+        "Amazon Marketing Cloud",
+        "Google ADH",
+        "Campaign Manager",
+        "Meta",
+        "Google Analytics"
+      ],
+      "job_responsibilities": "Analyze data to discover hidden trends, deliver insights with clear applicable recommendations, develop and implement Marketing Mix Models, work with platform partners to grow the suite of mathematical techniques"
+    }
+  },
+  {
+    "position": "Data Scientist",
+    "company": "HCLTech",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-17",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/data-scientist-at-hcltech-4266957142?position=6&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=uPF4JkPoxyzW6RkHlSAKQw%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/C4D0BAQF-RIoeeMTMKQ/company-logo_100_100/company-logo_100_100/0/1664197008220/hcltech_logo?e=2147483647&v=beta&t=xcyEJUPhrb87C_rsxS_BX3_2bZJF40KfbSVTJWSFdkU",
+    "agoTime": "2 days ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "Hiring for Data Scientist- AI Developer in HCLTechInterested candidate share your resume at selvakumari.b@hcltech.com with below formatEXP- 5 to 15YearsLocation- Bangalore, Chennai, Noida, Hyderabad, PuneName: Contact Number:Email ID:Current Location:Preferred Location:Total Experience:Relevant Experience:Current Organization:Current CTC:Expected CTC:Notice Period:Are you available for Interview this Weekend ?*Required Skills:*- *Technical Skills*: Proficiency in programming languages like Python, R, , and experience with machine learning algorithms, Deep learning-Strong foundation in statistics, mathematics,- *Communication*: Ability to communicate complex concepts clearly and effectively to stakeholders, and tailor messages for business applicability.- *Leadership*: Strong leadership and management skills, with the ability to build relationships with stakeholders and advocate for data-driven decision-making.",
+    "from_description": {
+      "experience_level": "5 to 15 Years",
+      "required_skills": [
+        "Python",
+        "R",
+        "Machine learning algorithms",
+        "Deep learning"
+      ],
+      "education": "Not specified",
+      "job_type": "Not specified",
+      "location": "Bangalore, Chennai, Noida, Hyderabad, Pune",
+      "salary": "Not specified",
+      "remote_status": "Not specified",
+      "technologies": [
+        "Python",
+        "R"
+      ],
+      "job_responsibilities": "Not specified"
+    }
+  },
+  {
+    "position": "Python Developer (SDE3/PE)",
+    "company": "Kotak Mahindra Bank",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-15",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/python-developer-sde3-pe-at-kotak-mahindra-bank-4266615857?position=7&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=83rZ23i8GIjfdBvxarxSBg%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/C510BAQF-GW7Nv4Reuw/company-logo_100_100/company-logo_100_100/0/1630581793286/kotak_mahindra_bank_logo?e=2147483647&v=beta&t=aGxSC4UtWM1c_BVQBZG9Kp8pXQbtKS3g-bVRXwyBcMw",
+    "agoTime": "4 days ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "About the Role:We are looking for a passionate and experienced Sr. Python Developer to join our team and play key role in building the next generation of risk systems. You will be responsible for the design, development, and implementation of data intensive quantitive solutions that meet the demanding requirements of Risk applications.Responsibilities:Design, develop, and test data intensive, quantitive solutions.Prepare technical documentation and mentor team members.Collaborate with Risk, Tech, and other teams to understand business requirements and translate them into technical solutions.Work with the team to provide technical guidance, review code etc. Good knowledge in test case automation.Work with Principal Engineer for ARB review, Infra review etc.Stay up-to-date with the latest technologies and trends.Qualifications:Minimum 6-12 years of experience in design and development of large-scale systems.Hands on experience on large scale system development in Python, Django, FastAPI.Prior experience on design and architecture on AWS services.Hands on experience on large scale system development.Strong understanding of design patterns, Python, OpenAPI specifications and API integrations.Excellent problem-solving and analytical skills.Strong communication and collaboration skills.Ability to work independently and as part of a team.Bonus Points:Experience with scalable data intensive financial systems.Awareness on Risk domain.Knowledge of cloud-based deployment and containerization technologies.Experience with Agile development methodologies.",
+    "from_description": {
+      "experience_level": "Not specified",
+      "required_skills": "Not specified",
+      "education": "Not specified",
+      "job_type": "Not specified",
+      "location": "Not specified",
+      "salary": "Not specified",
+      "remote_status": "Not specified",
+      "technologies": "Not specified",
+      "job_responsibilities": "Not specified"
+    }
+  },
+  {
+    "position": "AI Engineer",
+    "company": "Swirl®",
+    "location": "Bengaluru, Karnataka, India",
+    "date": "2025-07-17",
+    "salary": "Not specified",
+    "jobUrl": "https://in.linkedin.com/jobs/view/ai-engineer-at-swirl%C2%AE-4266996452?position=8&pageNum=0&refId=BYLSx0BZGtZh2eH4pz2Fdg%3D%3D&trackingId=QQMb6Ti4nu1HCN4zVSsLRA%3D%3D",
+    "companyLogo": "https://media.licdn.com/dms/image/v2/D4D0BAQHSHQ9LKfraAw/company-logo_100_100/company-logo_100_100/0/1738924403408/swirl_live_app_logo?e=2147483647&v=beta&t=9qqDl1sLcpytJc4iMBes7-iygyouhKwOp7Y_IEvV9wc",
+    "agoTime": "1 day ago",
+    "metadata": {
+      "keyword": "AI Accelerator Engineer",
+      "location": "Bangalore",
+      "experienceLevel": "Chief Technology Officer",
+      "remoteFilter": "hybrid"
+    },
+    "job_description": "Swirl AI turns every product page into a human-like sales conversation, blending LLMs, video understanding, real-time retrieval and agent orchestration. We’ve rocketed from 0 → Eight Figures of ARR in few months, and demand is outpacing our 7-person tech team. So, we need one extraordinary engineer to own the core of our platform and push it to Silicon Valley scale.What you’ll doFirst 90 days• Deep-dive into our multimodal stack (OpenAI-/Claude-based LLMs, custom SLMs, Azure Video Indexer, Pinecone/RAG, LangGraph)• Ship v2 of our SKU-specific “video-+-text” agent (latency < 500 ms, zero hallucinations).• Productionize auto-evaluation + guardrails (sentiment, brand safety)• Stand up voice & XR modalities and experiment with on-device inference. 6-12 months• Real-time GEO optimisation• Lead design of our “agent marketplace”: plug-and-play warranty, finance-offer & upsell agents.• Drive infra hardening to handle 10 M+ interactions / month across multiple Fortune-500 sites.Long term• Build and mentor an elite AI / ML/systems team.• Architect the path to: self-serve onboarding, global content network.You might be a fit if youHave 1-5+ yrs building production systems at scaleShipped deep-learning products end-to-end: data pipeline ➜ model training/fine-tuning ➜ safety/guardrails ➜ Serving (K8s, CUDA, Triton, Ray, or similar).Hands-on with multimodal (video, speech, vision) and agentic/RAG architectures.Fluent in Python/Typescript/Go; can debug distributed systems at 2 a.m. and still think product.Thrive in zero-to-one chaos: sketch, hack, iterate, talk to customers, then rewrite for scale.Believe ownership > titles, data-driven rigor > ego, and shipping weekly > polishing forever.What success looks likep50 latency < 500 ms for a multimodal query across 100k videos & 10M documents.Swirl AI becomes the reference “AI Sales Agent” demo in every Fortune-100 board deck.We out-innovate incumbents (Salesforce, Adobe, Shopify) by shipping features 4× faster with a team 10× leaner.Comp, stage & perksTop-of-market cash + meaningful founding equity (we’re an early-stage, venture-backed rocket).Choose your rig: M-series MacBook + 4k monitor or Linux workstation with RTX 6000.Remote-first (US / EU / India time overlap) with quarterly off-sites in Dubai, SF & Bangalore.Visa support, health + mental-wellness stipend, conference budget, unlimited books.Report directly to Kaizad Hansotia (Founder/CEO) & Akshil Shah (CTO) and shape the product that’s already trusted by BYD, Toyota, LG & Lennox.How to applySend GitHub/LinkedIn + 2-3 sentences on the toughest system you’ve built to careers@goswirl.ai. Side-projects, papers, or a Loom walk-through of your favourite model-ops trick = huge plus.We move fast: expect a 48-hr reply → 1 technical deep-dive → paid take-home sprint → offer.Join us to make product pages talk, show & sell — at human level, globally.",
+    "from_description": {
+      "experience_level": "Not specified",
+      "required_skills": "Not specified",
+      "education": "Not specified",
+      "job_type": "Not specified",
+      "location": "Not specified",
+      "salary": "Not specified",
+      "remote_status": "Not specified",
+      "technologies": "Not specified",
+      "job_responsibilities": "Not specified"
+    }
+  }
+]
