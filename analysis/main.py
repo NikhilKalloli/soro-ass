@@ -90,45 +90,83 @@ def analyze_top_skills(df, top_n=10):
     
     return top_skills_df
 
-# --- 3. Trend Analysis ---
+# --- 3. Trend Analysis with LLM Intelligence ---
 
-def analyze_emerging_skills(df, recent_threshold_days=2, top_n=10):
-    """Analyzes emerging skills and creates a visualization."""
-    print(f"\n--- Step 3: Analyzing Emerging Skills (Recent <= {recent_threshold_days} days) ---")
+def analyze_emerging_skills_with_llm(df, top_skills_list, recent_threshold_days=2, top_n=10):
+    """
+    Uses an LLM to identify emerging skills from recent job descriptions,
+    comparing against a baseline of top skills.
+    """
+    print(f"\n--- Step 3: Analyzing Emerging Skills with LLM Intelligence (Recent <= {recent_threshold_days} days) ---")
     
     recent_df = df[df['days_ago'] <= recent_threshold_days]
-    older_df = df[df['days_ago'] > recent_threshold_days]
-
-    if recent_df.empty or older_df.empty:
-        print("Not enough data to compare recent and older postings for trend analysis.")
+    if recent_df.empty:
+        print("No recent job postings found to analyze for emerging skills.")
         return pd.DataFrame()
 
-    recent_skills_counts = Counter([skill for sublist in recent_df['skills'] for skill in sublist])
-    older_skills_counts = Counter([skill for sublist in older_df['skills'] for skill in sublist])
+    # Combine recent job descriptions into a single text block for the LLM
+    recent_descriptions = "\n\n---\n\n".join(recent_df['job_description'].astype(str))
+    
+    model = genai.GenerativeModel('gemini-2.5-flash')
+    
+    prompt = f"""
+    You are a senior technology and recruitment analyst. Your task is to identify truly "emerging" skills from the latest job postings.
 
-    emerging_skills_scores = {}
-    for skill, recent_count in recent_skills_counts.items():
-        older_count = older_skills_counts.get(skill, 0)
-        if recent_count > older_count:
-            # Simple score: new skills or those with increased frequency are candidates
-            emerging_skills_scores[skill] = recent_count
+    I have two sets of data for you:
+    1.  **Baseline Top Skills**: This is a list of the most frequently mentioned skills across all job postings. These are the established, in-demand skills right now.
+        ```
+        {', '.join(top_skills_list)}
+        ```
 
-    if not emerging_skills_scores:
-        print("No clear emerging skills found based on the current data and threshold.")
+    2.  **Recent Job Descriptions**: This is the raw text from job descriptions posted in the last {recent_threshold_days} days.
+        ```
+        {recent_descriptions[:4000]} 
+        ```
+
+    **Your Analysis Task:**
+    Read through the recent job descriptions. Compare them against the baseline top skills. Identify a list of up to {top_n} skills or technologies that represent a new or growing trend. These should be skills that are not yet on the top skills list, or that seem to be gaining significant momentum and represent the "next wave" of technology.
+
+    Provide your answer ONLY as a JSON-formatted list of strings. For example: ["Quantum Computing", "Edge AI", "Rust Lang"].
+    """
+
+    print("Sending prompt to Gemini to identify emerging skills...")
+    try:
+        response = model.generate_content(prompt)
+        # Clean up the response to extract the JSON part
+        json_str = re.search(r'```json\n(.*)\n```', response.text, re.DOTALL)
+        if not json_str:
+            json_str = re.search(r'\[.*\]', response.text, re.DOTALL)
+        
+        if not json_str:
+             raise ValueError("LLM did not return a valid JSON list.")
+
+        emerging_skills_from_llm = json.loads(json_str.group(0))
+        print("LLM identified emerging skills:", emerging_skills_from_llm)
+
+    except (Exception, json.JSONDecodeError) as e:
+        print(f"An error occurred during LLM analysis or parsing: {e}")
+        print("Falling back to simple frequency analysis for emerging skills.")
+        # Fallback to a simple analysis if LLM fails
+        all_recent_skills = Counter([skill for sublist in recent_df['skills'] for skill in sublist])
+        emerging_skills_from_llm = [skill for skill, count in all_recent_skills.most_common(top_n)]
+
+
+    # Now, let's quantify and visualize these LLM-identified skills
+    all_recent_skills = Counter([skill for sublist in recent_df['skills'] for skill in sublist])
+    
+    # Filter and count only the skills the LLM identified
+    emerging_skill_counts = {skill: all_recent_skills[skill] for skill in emerging_skills_from_llm if skill in all_recent_skills}
+    
+    if not emerging_skill_counts:
+        print("None of the LLM-identified skills were found in the recent job data for plotting.")
         return pd.DataFrame()
 
-    # Get the top N emerging skills based on their frequency in recent jobs
-    top_emerging = Counter(emerging_skills_scores).most_common(top_n)
-    emerging_skills_df = pd.DataFrame(top_emerging, columns=['Skill', 'Recent Frequency'])
-
-    print(f"Top {top_n} potential emerging skills (more frequent in recent postings):")
-    for skill, count in top_emerging:
-        print(f"- {skill}: {count} mentions in recent jobs")
+    emerging_skills_df = pd.DataFrame(list(emerging_skill_counts.items()), columns=['Skill', 'Recent Frequency']).sort_values(by='Recent Frequency', ascending=False)
         
     # Visualization for emerging skills
     plt.figure(figsize=(12, 8))
     sns.barplot(x='Recent Frequency', y='Skill', data=emerging_skills_df, palette='mako')
-    plt.title(f'Top {top_n} Emerging Skills', fontsize=16)
+    plt.title(f'Top {len(emerging_skills_df)} LLM-Identified Emerging Skills', fontsize=16)
     plt.xlabel('Frequency in Recent Postings', fontsize=12)
     plt.ylabel('Skill', fontsize=12)
     plt.tight_layout()
@@ -154,12 +192,26 @@ def generate_and_save_report(top_skills_df, emerging_skills_df):
     top_skills_list = top_skills_df.to_string(index=False)
     emerging_skills_list = emerging_skills_df.to_string(index=False) if not emerging_skills_df.empty else "None identified"
 
-    prompt = f"""
-    You are a People Analytics expert preparing a report for your company's leadership.
-    Your analysis is based on two key visualizations derived from recent job market data:
+    company_profile = """
+    **Main Focus:** A semiconductor company making special computer chips for AI systems, data centers, and networks, focusing on technology that processes and moves data very fast.
+    **Target Markets:** Data centers (AI/cloud), Automotive (smart cars), Enterprise Networking, and Carrier Infrastructure (5G networks).
+    **Company Goal:** To accelerate AI and data infrastructure, enabling customers to build optimized, custom silicon solutions.
+    **Key Strengths:** Expertise in custom silicon, reliable execution, and deep customer partnerships. A focus on power-efficient, high-performance systems.
+    **Special Products:** Silicon solutions for AI computing, networking, and storage, including specialized chips for the automotive market.
+    **Work Style:** Emphasizes close, shoulder-to-shoulder collaboration with customers.
+    """
 
-    1.  **Top In-Demand Skills Chart (`top_skills.png`)**: This bar chart shows the most frequently mentioned skills across all job postings, indicating the core competencies required in the industry today.
-    2.  **Emerging Skills Chart (`emerging_skills.png`)**: This bar chart highlights skills that are more frequent in the most recent job postings compared to older ones. These are potential future-looking skills the company should pay attention to.
+    prompt = f"""
+    You are a People Analytics expert preparing a strategic report for the leadership of a leading semiconductor company.
+
+    ---
+    **COMPANY PROFILE:**
+    {company_profile}
+    ---
+
+    Your analysis is based on two key visualizations derived from recent job market data:
+    1.  **Top In-Demand Skills Chart (`top_skills.png`)**: This shows the most frequently mentioned skills, indicating core competencies in the industry.
+    2.  **Emerging Skills Chart (`emerging_skills.png`)**: This highlights skills trending in the most recent job postings, pointing to future needs.
 
     Here is the data that populates those charts:
 
@@ -175,10 +227,10 @@ def generate_and_save_report(top_skills_df, emerging_skills_df):
 
     **Your Task:**
     Write a comprehensive analysis in markdown format. Your report must:
-    1.  Start with a brief, high-level **Executive Summary**.
-    2.  Provide **Key Insights from the 'Top In-Demand Skills' chart**. Explain what these skills represent and why they are foundational.
-    3.  Provide **Key Insights from the 'Emerging Skills' chart**. Explain what these trends signify for the future and why they are important.
-    4.  Conclude with a set of **Actionable Recommendations** for hiring, upskilling, and overall workforce strategy based on a synthesis of both charts.
+    1.  Start with a brief **Executive Summary**.
+    2.  Provide **Key Insights from the 'Top In-Demand Skills' chart**.
+    3.  Provide **Key Insights from the 'Emerging Skills' chart**.
+    4.  Conclude with a set of **Actionable Recommendations**. These recommendations must be **specifically tailored to the company profile provided**. They should advise on how to leverage the skill trends to strengthen their position in their target markets (Data Center, Automotive, Enterprise, Carrier) and achieve their strategic goals.
 
     Please generate only the text for the report. The final markdown file will embed the images.
     """
@@ -231,8 +283,8 @@ def main():
     # Step 2: Frequency Analysis
     top_skills_df = analyze_top_skills(df)
     
-    # Step 3: Trend Analysis
-    emerging_skills_df = analyze_emerging_skills(df, recent_threshold_days=2)
+    # Step 3: Trend Analysis with LLM
+    emerging_skills_df = analyze_emerging_skills_with_llm(df, top_skills_df['Skill'].tolist(), recent_threshold_days=2)
 
     # Step 4: LLM-Powered Synthesis and Report Generation
     if not top_skills_df.empty:
