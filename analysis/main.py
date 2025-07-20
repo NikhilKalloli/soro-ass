@@ -20,7 +20,7 @@ genai.configure(api_key=API_KEY)
 
 # --- 1. Data Loading and Preparation ---
 
-def load_and_prepare_data(json_path='analysis/format.json'):
+def load_and_prepare_data(json_path='analysis/part_1_enrich.json'):
     """Loads job data from JSON, prepares it for analysis."""
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
